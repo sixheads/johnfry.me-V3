@@ -1,0 +1,25 @@
+// Mixins ----------------------------
+
+// Media Query
+// 480, 750, 960, 1296, 1800
+
+$breakpoints: (
+  sm: 30rem,
+  md-sm: 40.625rem,
+  md: 46.875rem,
+  lg: 60rem,
+  xl: 81rem,
+  xx: 112.5rem
+);
+
+@mixin bp($size) {
+  @media (min-width: map-get($breakpoints, $size)) {
+    @content;
+  }
+}
+
+// Rem output with px fallback
+@mixin font-size($sizeValue: 16) {
+  font-size: $sizeValue * 1px;
+  font-size: ($sizeValue / 16) * 1rem;
+}

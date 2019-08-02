@@ -1,0 +1,47 @@
+// Base styles ----------------------------
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  /* Inherit box-sizing to make it easier to change the property for components that leverage other behavior; see http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
+  box-sizing: inherit;
+}
+
+body {
+  font-family: $font__main;
+  background-color: $black;
+  color: $grey;
+  line-height: 1.6;
+  font-weight: $font--light;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $font__display;
+  font-weight: $font--medium;
+  color: $eggshell;
+  @include font-size(16);
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: $spacer * 1.5;
+  @include font-size(14);
+  @include bp(md) {
+    @include font-size(16);
+  }
+}
+
+img {
+  height: auto; /* Make sure images are scaled correctly. */
+  max-width: 100%; /* Adhere to container width. */
+  -ms-interpolation-mode: bicubic;
+  display: inline-block;
+  vertical-align: middle;
+}

@@ -1,0 +1,20 @@
+// Work ----------------------------
+.work__item {
+  .work__img,
+  .work__title {
+    transition: all 0.3s ease-in-out;
+  }
+  &:hover {
+    .work__img {
+      border-bottom-color: $eggshell;
+      opacity: 0.7;
+    }
+    .work__title {
+      color: $aqua;
+    }
+  }
+}
+
+.work__img {
+  border-bottom: 3px solid $aqua;
+}

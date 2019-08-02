@@ -1,0 +1,41 @@
+// Navigation Component ----------------------------
+.site-nav {
+  border-top: 10px solid $aqua;
+  padding-top: $spacer * 2;
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: $spacer;
+    @include bp(md) {
+      grid-gap: $spacer * 1.5;
+    }
+  }
+
+  li {
+    border-top: 1px solid $eggshell;
+  }
+  a {
+    display: block;
+    color: $eggshell;
+    border-top: 3px solid transparent;
+    padding-top: $spacer/4;
+    font-family: $font__display;
+    @include font-size(13);
+    text-transform: uppercase;
+    text-decoration: none;
+    &:visited {
+      color: $eggshell;
+    }
+    &:hover {
+      border-top-color: $aqua;
+    }
+  }
+  a.active {
+    border-top-color: $aqua;
+  }
+}

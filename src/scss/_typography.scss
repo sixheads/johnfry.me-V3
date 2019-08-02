@@ -1,0 +1,102 @@
+// Typography ----------------------------
+
+// Header
+.site-branding {
+  h1 {
+    font-family: $font__main;
+    @include font-size(22);
+    color: $eggshell;
+    margin: $spacer 0 0;
+    @include bp(sm) {
+      @include font-size(26);
+      margin: 0;
+    }
+  }
+  a {
+    text-decoration: none;
+  }
+  .site-branding--dot {
+    color: $aqua;
+  }
+  .site-branding--me {
+    color: $aqua;
+  }
+}
+.site__intro p {
+  @include font-size(22);
+  color: $eggshell;
+  @include bp(sm) {
+    @include font-size(26);
+  }
+}
+.site__intro-cta {
+  margin: 0;
+  a {
+    color: $aqua;
+    text-decoration: none;
+  }
+}
+
+// Main
+.title {
+  text-transform: uppercase;
+  @include font-size(13);
+  border-top: 1px solid $eggshell;
+  padding-top: $spacer/2;
+  margin: 0;
+}
+.work .title {
+  margin-bottom: $spacer * 1.5;
+  @include bp(sm) {
+    margin-bottom: $spacer * 1.5;
+  }
+}
+
+.work__title {
+  margin-bottom: 0;
+  @include font-size(13);
+  @include bp(sm) {
+    @include font-size(16);
+  }
+  @include bp(md) {
+    @include font-size(18);
+  }
+}
+.work__designer {
+  @include font-size(12);
+  @include bp(sm) {
+    @include font-size(13);
+  }
+  margin: 0;
+  a {
+    text-decoration: none;
+  }
+  span {
+    display: none;
+    @include bp(md) {
+      display: inline;
+    }
+  }
+}
+
+.experience__dates,
+.education__dates {
+  font-family: $font__display;
+  @include font-size(13);
+  margin: 0;
+}
+.experience__title,
+.education__title,
+.skills__title {
+  color: $aqua;
+  margin: 0 0 $spacer/2;
+}
+
+// Contact
+.contact__phone {
+  margin-bottom: $spacer/2;
+}
+// Footer
+.footer-details p {
+  @include font-size(13);
+}

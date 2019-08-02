@@ -1,0 +1,27 @@
+// Links ----------------------------
+
+a {
+  color: $grey;
+  transition: all 0.3s ease-in-out;
+  &:visited {
+    color: $grey;
+  }
+  &:hover,
+  &:focus,
+  &:active {
+    color: $aqua;
+    text-decoration: none;
+  }
+}
+a.link--alt {
+  color: $aqua;
+  &:visited {
+    color: $aqua;
+  }
+  &:hover,
+  &:focus,
+  &:active {
+    color: $eggshell;
+    text-decoration: none;
+  }
+}
