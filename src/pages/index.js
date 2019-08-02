@@ -1,20 +1,20 @@
 import React from "react"
-import { Link } from "gatsby"
 
 import Layout from "../components/layout"
-import Image from "../components/image"
 import SEO from "../components/seo"
+import SiteIntro from "../components/SiteIntro"
+import Work from "../components/work/Work"
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div>
-    <Link to="/page-2/">Go to page 2</Link>
+    <SEO title="Work" />
+    <SiteIntro
+      intro="Yeah G'day! My name is John Fry. I’m a freelance Melbourne-based frontend developer, specialising in custom WordPress builds. I also dabble in React."
+      cta="Get in contact to discuss your project."
+    />
+    <main className="site-main">
+      <Work />
+    </main>
   </Layout>
 )
 
